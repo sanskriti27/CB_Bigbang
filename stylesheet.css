@@ -1,0 +1,232 @@
+@import url(https://allfont.net/allfont.css?fonts=star-jedi);
+
+#done{
+    background-image: url('assets/Orientation_Background.jpg');
+}
+
+#done div h2{
+    font-family: Equinox;
+    font-size: 2.5rem;
+    color: aliceblue;
+    margin: auto;
+    margin-top: 1%;
+    text-shadow: 1px 1px 8px white;
+    text-align: center;
+
+}
+
+#done div div{
+    margin-top: 10%;
+}
+
+#done div div img{
+    width: 50%;
+    margin-left: 20%;
+    
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('assets/Orientation_Background.jpg');
+    background-size: contain;
+    background-position-x: 50% ;
+   
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+}
+
+.container .logo{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .logo h2{
+    
+    font-size: 2.5rem;
+    font-family: Equinox;
+    color: aliceblue;
+    margin: auto;
+    margin-top: 1%;
+    text-shadow: 1px 1px 8px white;
+    text-align: center;
+}
+
+.container .logo p{
+    color: white;
+    text-align: center;
+    font-family: Equinox;
+
+}
+
+
+.container .form-container{
+   background-image: url(assets/event_CardBackground.jpeg);
+   padding: 2%;
+    width: 50%;
+    /* margin: auto; */
+    margin-top: 1%;
+    border-radius: 5px;
+}
+
+.container .form-container div{
+    margin: 3% 2%;
+   display: flex;
+   flex-direction: column;
+   color: black;
+   font-family: Equinox ;
+}
+
+.container .form-container div label{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1%;
+}
+
+.container .form-container div input, select{
+    font-size: 1rem;
+    background-color: black;
+    padding: 1.5%;
+    border-radius: 3px;
+    border: none;
+    color: white;
+}
+
+input:focus, textarea:focus, select:focus{
+   outline: none;
+    color: white;
+    font-family: 'Montserrat' ;
+    background-color: #181717;
+}
+
+.container .form-container div button{
+    cursor: pointer;
+    width: 40%;
+    font-family: Equinox;
+    font-weight: 400;
+    margin: auto;
+    margin-top: 2%;
+    font-size: 1rem;
+    padding: 1.5%;
+    border-radius: 2px;
+    border: none;
+    box-shadow: #181717 1px 1px 19px 0px;
+    background-color: black;
+    color: white
+    
+}
+
+.container .form-container div button a{
+    color: white;
+    text-decoration: none;
+    width: 100%;
+}
+
+.container .form-container div button:hover{
+    box-shadow: none;
+    background-size: contain;
+
+}
+
+.credits{
+    font-size: 0.7rem;
+    color: white;
+    text-align: end;
+    margin-right: 1%;
+    font-family: Equinox ;
+    text-align: right;
+}
+
+
+@media only screen and (max-width: 1340px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url('assets/Orientation_Background.jpg');
+        background-size: contain;
+        background-position-x: 50% ;  
+        background-position-y: 100%; 
+       
+    } 
+
+    .container .logo h2{
+    
+        margin-top: 5%;
+    
+    }
+
+    .container .form-container{
+       
+        padding: 4%;
+         width: 50%;
+         /* margin: auto; */
+         margin-top: 10%;
+         border-radius: 5px;
+     }
+
+     .credits{
+        margin-top: 5%;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    body{
+        background-image: url('assets/Orientation_Background_NoAstro.jpg');
+        background-size: contain;
+       background-repeat:round;
+       
+    } 
+    .container{
+        margin-top: 10%;
+        width: 90%;
+    }
+    .container .logo h2{
+        
+        font-size: 1.5rem;
+
+    }
+    .container .logo p{
+
+        font-size: 0.8rem;
+    
+    }
+
+    .container .form-container div label{
+        font-size: 0.7rem;
+    }
+    
+    .container .form-container div input, select{
+        font-size: 0.7rem;
+        padding: 3%;
+    }
+
+    
+
+    .container .form-container{
+        
+        width: 70%;
+         margin: auto;
+         margin-top: 5%;
+     }
+
+     .container .form-container div button{
+        
+        font-size: 0.7rem;
+        padding: 3%;
+        
+    }
+
+     .credits{
+         margin-top: 5%;
+        text-align: center;
+        font-size: 0.5rem;
+        
+    }
+
+}
