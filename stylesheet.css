@@ -2,15 +2,63 @@
 
 #done{
     background-image: url('assets/Orientation_Background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#done div h2{
+#canvas{
+    display: none;    
+    width: 50%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.container .canvas-frame h2{
+    
+    font-size: 1.5rem;
     font-family: Equinox;
-    font-size: 2.5rem;
     color: aliceblue;
     margin: auto;
     margin-top: 1%;
     text-shadow: 1px 1px 8px white;
+    text-align: center;
+}
+
+#head{
+    display: none;
+}
+
+
+#download{
+    cursor: pointer;
+    width: 40%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    color: black;
+    text-shadow: 1px 1px 8px white;
+    padding: 1%;
+    font-family: Equinox;
+    font-weight: 700;
+}
+
+#done button:hover{
+    box-shadow:none;
+}
+
+#tckt{
+    display: flex;
+}
+
+#done div p{
+    width: 50%;
+    font-family: Star Jedi;
+    font-size: 2.5rem;
+    color: aliceblue;
+    margin: auto;
+    margin-top: 2%;
+    /* text-shadow: 1px 1px 8px white; */
     text-align: center;
 
 }
@@ -139,6 +187,19 @@ input:focus, textarea:focus, select:focus{
     margin-right: 1%;
     font-family: Equinox ;
     text-align: right;
+}
+
+.center{
+    margin: auto;
+}
+
+.container .canvas-frame canvas{
+    margin-bottom: 2%;
+}
+
+.canvas-frame{
+    display: flex;
+    flex-direction: column;
 }
 
 

@@ -1,22 +1,44 @@
-var submitBtn = document.querySelector("#submit");
+var canvas = document.getElementById("canvas"),
+  ctx = canvas.getContext("2d");
 
-submitBtn.addEventListener("click", submitForm);
+canvas.width = 1869;
+canvas.height = 884;
 
-function submitForm(e) {
-//   e.preventDefault();
+var background = new Image();
+background.src =
+  "https://res.cloudinary.com/pooja-gera/image/upload/v1650903571/OrientationTicket_v2_0.5perc_thtcyl.png";
 
-  var name = getInput("name");
-  var email = getInput("email");
-  var course = getInput("course");
-  var department = getInput("department");
-  var batch = getInput("batch");
+const nameInput = document.getElementById("name");
+const enrollInput = document.getElementById("enroll");
+const submitBtn = document.getElementById("submitBtn");
+submitBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  ctx.drawImage(background, 0, 0);
+  ctx.fillStyle = "#ffffff";
+  ctx.font = "50px Poppins, sans-serif";
+  // change position or placement of name here
+  ctx.fillText(nameInput.value, 1290, 360);
+  ctx.fillStyle = "#ffffff";
+  ctx.font = "40px Poppins, sans-serif";
+  // change position or placement of ticketNumber here
+  ctx.fillText(enrollInput.value, 325, 805);
+  document.getElementById('canvas').style.display = 'block';
+  document.getElementById('head').style.display = 'block'
+  document.getElementById('hide').style.display = 'none'
 
-  var atagdiv = document.querySelector("#ticket");
-  var at = atagdiv.querySelector("a");
+});
 
-  at.click();
-}
+var name = "";
+var ticketNumber = "";
 
-function getInput(id) {
-  return document.getElementById(id).value;
-}
+background.onload = function () {
+  ctx.drawImage(background, 0, 0);
+  ctx.fillStyle = "#ffffff";
+  ctx.font = "50px Poppins, sans-serif";
+  // change position or placement of name here
+  ctx.fillText(name, 1290, 360);
+  ctx.fillStyle = "#ffffff";
+  ctx.font = "40px Poppins, sans-serif";
+  // change position or placement of ticketNumber here
+  ctx.fillText(ticketNumber, 325, 805);
+};
