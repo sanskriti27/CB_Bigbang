@@ -22,9 +22,10 @@ submitBtn.addEventListener("click", function (e) {
   ctx.font = "40px Poppins, sans-serif";
   // change position or placement of ticketNumber here
   ctx.fillText(enrollInput.value, 325, 805);
-  document.getElementById('canvas').style.display = 'block';
-  document.getElementById('head').style.display = 'block'
-  document.getElementById('hide').style.display = 'none'
+  document.getElementById("canvas").style.display = "block";
+  document.getElementById("head").style.display = "block";
+  document.getElementById("hide").style.display = "none";
+
 
 });
 
