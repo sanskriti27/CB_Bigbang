@@ -5,6 +5,7 @@ canvas.width = 1869;
 canvas.height = 884;
 
 var background = new Image();
+background.crossOrigin = "Anonymous";
 background.src =
   "https://res.cloudinary.com/pooja-gera/image/upload/v1650903571/OrientationTicket_v2_0.5perc_thtcyl.png";
 
@@ -45,27 +46,12 @@ background.onload = function () {
 
 const download = document.getElementById("download");
 
-download.addEventListener("click",function(){
-  let url = canvas.toDataURL("image/png");
+download.addEventListener("click", function () {
+  const mycanvas = document.getElementById("canvas");
+  var url = mycanvas.toDataURL();
   let a = document.createElement("a");
-  a.setAttribute("href",url);
-  a.setAttribute("download", "canvas.png");
+  a.setAttribute("href", url);
+  a.setAttribute("download", `Bigbang_${enrollInput.value}_${nameInput.value}`);
   a.click();
   a.remove();
-})
-
-// function download(canvas, filename) {
-//   /// create an "off-screen" anchor tag
-//   var lnk = document.createElement("a");
-
-//   /// the key here is to set the download attribute of the a tag
-//   lnk.download = filename;
-
-//   /// convert canvas content to data-uri for link. When download
-//   /// attribute is set the content pointed to by link will be
-//   /// pushed as "download" in HTML5 capable browsers
-//   lnk.href = canvas.toDataURL("image/png,base64");
-
-//   /// create a "fake" click-event to trigger the download
-//   lnk.onclick();
-// }
+});
