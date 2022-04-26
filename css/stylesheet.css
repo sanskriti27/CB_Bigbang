@@ -31,6 +31,7 @@
 
 
 #download{
+    display: none;
     text-align: center;
     display: none;
     cursor: pointer;
@@ -38,7 +39,7 @@
     margin: auto;
     margin-top: 2%;
     margin-bottom: 4%;
-    background-image: url(../assets/event_CardBackground.jpeg);
+    background-image: url('../assets/event_CardBackground.jpeg');
     color: black;
     text-shadow: 1px 1px 8px white;
     padding: 1%;
