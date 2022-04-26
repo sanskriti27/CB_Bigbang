@@ -205,6 +205,11 @@ input:focus, textarea:focus, select:focus{
 
 
 @media only screen and (max-width: 1340px){
+
+    .container .form-container div button{
+        font-family: Equinox;
+    }
+
     body{
         display: flex;
         flex-direction: column;
@@ -214,12 +219,23 @@ input:focus, textarea:focus, select:focus{
         background-position-x: 50% ;  
         background-position-y: 100%; 
        
+
     } 
+
+    .container .form-container div label{
+        
+        font-family: Equinox ;
+    }
+    
+    .container .form-container div input, select{
+        
+        font-family: Equinox ;
+    }
 
     .container .logo h2{
     
         margin-top: 5%;
-    
+        font-family: Equinox ;
     }
 
     .container .form-container{
@@ -233,6 +249,7 @@ input:focus, textarea:focus, select:focus{
 
      .credits{
         margin-top: 5%;
+        font-family: Equinox ;
     }
 }
 
@@ -251,7 +268,7 @@ input:focus, textarea:focus, select:focus{
     .container .logo h2{
         
         font-size: 1.5rem;
-
+        font-family: Equinox ;
     }
     .container .logo p{
 
@@ -261,11 +278,13 @@ input:focus, textarea:focus, select:focus{
 
     .container .form-container div label{
         font-size: 0.7rem;
+        font-family: Equinox ;
     }
     
     .container .form-container div input, select{
         font-size: 0.7rem;
         padding: 3%;
+        font-family: Equinox ;
     }
 
     
@@ -281,6 +300,7 @@ input:focus, textarea:focus, select:focus{
         
         font-size: 0.7rem;
         padding: 3%;
+        font-family: Equinox;
         
     }
 
@@ -288,6 +308,7 @@ input:focus, textarea:focus, select:focus{
          margin-top: 5%;
         text-align: center;
         font-size: 0.5rem;
+        font-family: Equinox ;
         
     }
 
