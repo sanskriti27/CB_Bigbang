@@ -31,11 +31,14 @@
 
 
 #download{
+    text-align: center;
+    display: none;
     cursor: pointer;
     width: 40%;
     margin: auto;
     margin-top: 2%;
     margin-bottom: 4%;
+    background-image: url(../assets/event_CardBackground.jpeg);
     color: black;
     text-shadow: 1px 1px 8px white;
     padding: 1%;
